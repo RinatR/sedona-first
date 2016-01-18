@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Index</title>
+	<title>Hotels</title>
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' 
@@ -12,16 +12,67 @@
 	<div class="page-wrapper">
 		<header class="main-header">
 			<div class="layout-center">
-				<nav class="main-nav">						
+				<nav class="main-nav">			
 					<a href="#">Информация</a>
 					<a href="#">Фото и Видео</a>			
 					<a href="#">Карта штата</a>
-					<a href="hotels.html">Гостиницы</a>							
+					<a href="hotels.html">Гостиницы</a>						
 				</nav>
 			</div>
-			<div class="header-image">	</div>		
+			<div class="filters clearfix">
+				<div class="layout-center">
+					<div class="filter-block">
+						<h2 class="filter-title">Инфраструктура</h2>
+						<div class="filter-control">
+							<input type="checkbox" name="pull" checked>
+							<label for="pull">Бассейн</label>
+						</div>
+						<div class="filter-control">
+							<input type="checkbox" name="parking">
+							<label for="parking">Парковка</label>
+						</div>
+						<div class="filter-control">
+							<input type="checkbox" name="wifi">
+							<label for="wifi">Wi-Fi</label>
+						</div>
+					</div>
+					<div class="filter-block">
+						<h2 class="filter-title">Тип жилья</h2>
+						<div class="filter-control">
+							<input type="checkbox" name="hotel" checked>
+							<label for="hotel">Гостиница</label>
+						</div>
+						<div class="filter-control">
+							<input type="checkbox" name="motel" checked>
+							<label for="motel">Мотель</label>
+						</div>
+						<div class="filter-control">
+							<input type="checkbox" name="apartment" checked>
+							<label for="apartment">Апартаменты</label>
+						</div>
+					</div>
+					<div class="filter-block">
+						<h2 class="filter-title">Стоимость в сутки(Р):</h2>
+						<div class="price-controls">
+							<label for="min-price" class="min-price">От
+								<input type="text" name="min-price" value="0">
+							</label>							
+							<label for="max-price" class="max-price">До
+								<input type="text" name="max-price" value="30000">
+							</label>							
+						</div>	
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar"></div>
+							</div>
+							<div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
+						</div>											
+					</div>
+				</div>
+			</div>		
 		</header>
-		<main class="main-content">
+		<!-- <main class="main-content">
 			<div class="page-header">
 				<h1>Седона - небольшой городок в Аризоне, <br>
 			заслуживающий большего!</h1>
@@ -115,7 +166,7 @@
 				</div>												
 			</div>
 			<div class="map-block"></div>		
-		</main>
+		</main> -->
 		<footer class="footer">
 			<div class="footer-block hashtag">
 				<span>#VisitSedona</span>
