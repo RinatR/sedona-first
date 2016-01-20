@@ -10,16 +10,28 @@
 </head>
 <body>
 	<div class="page-wrapper">
-		<header class="main-header">
-			<div class="layout-center">
-				<nav class="main-nav">						
-					<a href="#">Информация</a>
-					<a href="#">Фото и Видео</a>			
-					<a href="#">Карта штата</a>
-					<a href="hotels.html">Гостиницы</a>							
-				</nav>
-			</div>
-			<div class="header-image">	</div>		
+		<header class="main-header">			
+			<nav class="main-nav">						
+				<a href="#">Информация</a>
+				<a href="#">Фото и Видео</a>	
+				<a href="#">	</a>		
+				<a href="#">Карта штата</a>
+				<a href="hotels.html">Гостиницы</a>							
+			</nav>
+			<a href="index.html" class="logo"> </a>			
+			<div class="header-image">
+				<div class="header-image-text">
+					<!-- <img class="first-line" src="img/welcome.png" width="188" height="45" alt="Welcome image"> -->
+					<div class="first-line"></div>
+					<div class="second-line"></div>
+					<div class="third-line"> </div>
+					<div class="fourth-line"></div>
+						<!-- <img src="img/gorgeous.png" width="176" height="30" alt="Gorgeous image"> -->
+					
+					<!-- <img class="third-line" src="img/sedona.png" width="458" height="78" alt="Sedona image"> -->
+					<!-- <img src="img/because.png" width="458" height="78" alt="Because image">				 -->
+				</div>				
+			</div>		
 		</header>
 		<main class="main-content">
 			<div class="page-header">
@@ -37,7 +49,9 @@
 						Седона - не аттракцион для туристов, <br> Там течет своя жизнь
 					</p>
 				</div>
-				<div class="promo-block-image">image</div>
+				<div class="promo-block-image">
+					<img src="img/promo-right-img.jpeg" width="800" height="256" alt="Right image">	
+				</div>
 			</div>
 			<div class="features clearfix">
 				<div class="feature-item">
@@ -64,7 +78,9 @@
 					Если конечно, Вы осмелитесь
 					</p>
 				</div>
-				<div class="promo-block-image">image</div>
+				<div class="promo-block-image">
+					<img src="img/promo-left-img.jpeg" width="800" height="256" alt="Left image">
+				</div>
 				<div class="reason-block">
 					<h2 class="reason-block-header">Небольшая площадь</h2>
 					<div class="reason-number">
@@ -94,11 +110,11 @@
 				<a class="btn btn-search-hotel" href="#">Поиск гостиницы в Седоне</a>
 				<div class="search-modal">
 					<form class="search-form" action="/echo" method="post">
-						<label class="date">
+						<label>
 							Дата заезда:
 							<input type="text" name="checkin-date" placeholder="24 апреля 2014">							
 						</label>
-						<label class="date">
+						<label>
 							Дата выезда:
 							<input type="text" name="checkout-date" placeholder="4 июля 2014">
 						</label>
