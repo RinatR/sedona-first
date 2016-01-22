@@ -106,24 +106,16 @@
 				</p>
 				<a class="btn btn-search-hotel" href="#">Поиск гостиницы в Седоне</a>
 				<div class="search-modal">
-					<form class="search-form" action="/echo" method="post">
-						<label>
-							Дата заезда:
-							<input type="text" name="checkin-date" placeholder="24 апреля 2014">							
-						</label>
-						<label>
-							Дата выезда:
-							<input type="text" name="checkout-date" placeholder="4 июля 2014">
-						</label>
-						<label class="customer-type">
-							Взрослые: 
-							<input type="text" name="adults" value="2">
-						</label>
-						<label class="customer-type">
-							Дети:
-							<input type="text" name="children" value="0">
-						</label>												
-						<input type="submit" class="btn-search-form" value="Найти">
+					<form class="search-form" action="/echo" method="post">						
+						<label for="checkin-field">Дата заезда:</label>
+						<input type="text" name="checkin-date" id="checkin-field" value="24 апреля 2014">					
+						<label for="checkout-field">Дата выезда:</label>
+						<input type="text" name="chechout-date" id="checkout-field" value="4 июля 2014">				
+						<label class="adult" for="adult-field">Взрослые:</label>
+						<input type="text" name="adult" id="adult-field" value="2">						
+						<label class="children" for="children-field">Дети:</label>
+						<input type="text" name="children" id="children-field" value="0">	
+						<input type="submit" value="Найти">							
 					</form>
 				</div>												
 			</div>					

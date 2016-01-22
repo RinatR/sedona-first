@@ -376,78 +376,118 @@ h1, h2, p {
 
 .search-form {
 	padding: 0;
-	margin: 0;
-}
-
-.search-modal label {
-	position: relative;
-	display: block;
-	vertical-align: top;
-	margin-bottom: 30px;
-	text-align: right;
-	font-weight: bold;
-}
-
-.search-modal input[type="text"] {			
-	width: 346px;	
-	padding: 8px 14px;
-	margin-left: 20px;
-	border:none;
-	outline: none;
-	font-family: "PT Sans", "Arial", sans-serif;
-	font-size: 14px;
-	line-height: 26px;
+	margin: 0;	
 	font-weight: bold;
 	text-transform: uppercase;
-	color: #000000;
-	background-color: #f2f2f2;	
 }
 
-.search-modal label:before { 
+.search-form label + input[type="text"] {
+	margin-bottom: 30px;
+}
+
+.search-form input[type="text"] {
+	display: inline-block;
+	width: 340px;
+	padding: 8px;
+	outline: none;
+	font-family: "PT Sans", "Arial", sans-serif;
+	text-transform: uppercase;
+	border: 2px solid #f2f2f2;
+	background-color: #f2f2f2;
+}
+
+.search-form input[type="text"]:hover {
+	background-color: #ebebeb;
+	border: 2px solid #ebebeb;
+}
+
+.search-form input[type="text"]:active {
+	background-color: transparent;
+	border-color: #e5e5e5; 
+}
+
+.search-form input[type="text"]:nth-child(2) {
+	margin-left: 29px;	
+}
+
+.search-form label {
+	position: relative;
+}
+
+.search-form label:before,
+.search-form label:after {
 	content: "\e800";
-	font-family: "symbols-sedona";
-	font-size: 21px;
-	font-weight: normal;
-	line-height: 26px;
-	color: #c2c2c2;
 	position: absolute;
-	top: 50%;
-	left: 430px;
-	transform: translateY(-50%);
-	cursor: pointer;
+	left: 440px;
+	top: -4px;
+	font-family: "symbols-sedona";
+	font-style: 21px;
+	line-height: 26px;
+	font-weight: normal;
+	color: #c2c2c2;
+	cursor: pointer;	
 }
 
-/*.customer-type {
-	float: left;
-}*/
+.search-form input[type="text"]:nth-child(4) {
+	margin-left: 26px;	
+}
 
-.customer-type input[type="text"] {
-	width: 115px;
+.search-form input[type="text"]:nth-child(6),
+.search-form input[type="text"]:nth-child(8) {
+	width: 115px;	
+}
+
+.search-form input[name="adult"] {
+	margin-right: 38px;
+	margin-left: 48px;
 	text-align: center;
 }
 
-.customer-type {
-	position: relative;
-}
-
-label.customer-type:before {
+label.adult:before,
+label.children:before {
 	content: "\e801";
-	position: absolute;
-	left: 100%;
-	font-family: "symbols-sedona";
-	font-size: 14px;
-	line-height: 21px;
-	font-weight: normal;
+	position: absolute;	
+	top: -3px;
+	cursor: pointer;
 }
 
-.btn-search-form {
+label.adult:before { 
+	left: 215px;
+}
+
+label.children:before { 
+	left: 160px;
+}
+
+label.adult:after,
+label.children:after {
+	content: "\e802";
+	position: absolute;	
+	top: -3px;
+	cursor: pointer;
+}
+
+.search-form input[name="children"] {	
+	margin-left: 26px;
+	text-align: center;
+}
+
+label.adult:after { 
+	left: 135px;
+}
+
+label.children:after { 
+	left: 80px;
+}
+
+.search-form input[type="submit"] {
 	width: 100%;
-	padding: 20px 0;
+	padding: 19px 0;
 	border: none;
-	outline: none;
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 21px;
-	line-height: 26px;
+	line-height: 26px;	
+	text-transform: uppercase;
 	color: #ffffff;
 	background-color: #81b3d2;
 }
@@ -498,7 +538,7 @@ label.customer-type:before {
 }
 
 .filter-control input[type="checkbox"] {
-	display: none;
+	display: none;	
 }
 
 .filter-control input[type="checkbox"] + label {	
@@ -516,7 +556,7 @@ label.customer-type:before {
   left: 0;
   font-size: 21px;
   font-family: "symbols-sedona"; 
-  color: #ffffff; 
+  color: #b5b5b5; 
 }
 
 .filter-control input[type="checkbox"] + label:before {
@@ -525,6 +565,14 @@ label.customer-type:before {
 
 .filter-control input[type="checkbox"]:checked + label:before {
 	content: "\2611";	
+}
+
+.filter-control input[type="checkbox"] + label:hover:before {
+	color: #fefefe;
+}
+
+.filter-control input[type="checkbox"] + label:active:before {
+	color: #6a6a6a;
 }
 
 .price-controls {
@@ -590,10 +638,13 @@ label.customer-type:before {
 	height: 4px;
 	border: 8px solid #ffffff;
 	border-radius: 50%;
-	background-color: #1c4f80;
+	background-color: #ababab;
 	cursor: pointer; ;
 }
 
+.range-controls .toggle:hover {
+	background-color: #1c4f80;
+}
 .range-controls .min-toggle {
   left: 0;
 }
