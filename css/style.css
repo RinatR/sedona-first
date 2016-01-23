@@ -362,7 +362,7 @@ h1, h2, p {
 }
 
 .search-modal {
-	/*display: none;	*/
+	display: none;	
 	position: absolute;
 	left: 50%;	
 	z-index: 2;
@@ -372,6 +372,10 @@ h1, h2, p {
 	transform: translateX(-50%);
 	text-align: left;
 	background-color: #ffffff;
+}
+
+.modal-show {
+	display: block;
 }
 
 .search-form {
@@ -490,6 +494,16 @@ label.children:after {
 	text-transform: uppercase;
 	color: #ffffff;
 	background-color: #81b3d2;
+	outline: none;
+}
+
+.search-form input[type="submit"]:hover {
+	background-color: #669ec0;
+}
+
+.search-form input[type="submit"]:active {
+	background-color: #5496bd;
+	color: rgba(255,255,255, 0.3);
 }
 
 /*Catalog styles*/
