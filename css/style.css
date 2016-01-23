@@ -138,6 +138,7 @@ h1, h2, p {
 	width: 138px;
 	height: 70px;
 	background: url("../img/main-logo.png") no-repeat;
+	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
 
@@ -369,6 +370,7 @@ h1, h2, p {
 	width: 464px;
 	padding: 56px;
 	margin: 0 auto;
+	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	text-align: left;
 	background-color: #ffffff;
@@ -391,7 +393,7 @@ h1, h2, p {
 
 .search-form input[type="text"] {
 	display: inline-block;
-	width: 340px;
+	width: 320px;
 	padding: 8px;
 	outline: none;
 	font-family: "PT Sans", "Arial", sans-serif;
@@ -438,11 +440,11 @@ h1, h2, p {
 
 .search-form input[type="text"]:nth-child(6),
 .search-form input[type="text"]:nth-child(8) {
-	width: 115px;	
+	width: 98px;	
 }
 
 .search-form input[name="adult"] {
-	margin-right: 38px;
+	margin-right: 40px;
 	margin-left: 48px;
 	text-align: center;
 }
@@ -456,11 +458,11 @@ label.children:before {
 }
 
 label.adult:before { 
-	left: 215px;
+	left: 220px;
 }
 
 label.children:before { 
-	left: 160px;
+	left: 155px;
 }
 
 label.adult:after,
@@ -472,7 +474,7 @@ label.children:after {
 }
 
 .search-form input[name="children"] {	
-	margin-left: 26px;
+	margin-left: 18px;
 	text-align: center;
 }
 
@@ -481,7 +483,7 @@ label.adult:after {
 }
 
 label.children:after { 
-	left: 80px;
+	left: 70px;
 }
 
 .search-form input[type="submit"] {
@@ -720,6 +722,7 @@ label.children:after {
 .top-filter a:nth-child(5) {
 	position: absolute;	
 	top: 50%;
+	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);	
 	margin-right: 0;
 	border-bottom: none;
@@ -953,6 +956,7 @@ label.children:after {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
 

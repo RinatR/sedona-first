@@ -1,10 +1,10 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>Hotels</title>
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' 
 	rel='stylesheet' type='text/css'>
 </head>
@@ -55,11 +55,11 @@
 						<div class="filter-block">
 							<h2 class="filter-title">Стоимость в сутки(Р):</h2>
 							<div class="price-controls">
-								<label for="min-price" class="min-price">От
-									<input type="text" name="min-price" value="0" maxlength="5">
+								<label for="min-price-field" class="min-price">От
+									<input type="text" name="min-price" id="min-price-field" value="0" maxlength="5">
 								</label>							
-								<label for="max-price" class="max-price">До
-									<input type="text" name="max-price" value="30000" maxlength="5">
+								<label for="max-price-field" class="max-price">До
+									<input type="text" name="max-price" id="max-price-field" value="30000" maxlength="5">
 								</label>							
 							</div>	
 							<div class="range-controls">
@@ -117,7 +117,7 @@
 				</div>
 				<div class="hotel clearfix">
 					<div class="hotel-image">
-						<img src="img/desert.jpeg" width="135" height="90"alt="Desert Quail Inn">
+						<img src="img/desert.jpeg" width="135" height="90" alt="Desert Quail Inn">
 					</div>
 					<div class="hotel-info">
 						<a class="hotel-title" href="#">Desert Quail Inn</a>
