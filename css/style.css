@@ -510,9 +510,8 @@ label.children:after {
 .filters {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
-	line-height: 26px;
-	background-color: lightblue;
-	background: url("../img/filter-background.png") no-repeat;
+	line-height: 26px;	
+	background: #7aabcb url("../img/filter-background.png") no-repeat;
 	color: #ffffff;
 }
 
@@ -620,7 +619,7 @@ label.children:after {
 .price-controls input[type="text"] {
 	width: 40px;
 	border: none;
-	background-color: inherit;
+	background-color: transparent;
 	outline: none;
 	text-transform: uppercase;
 }
